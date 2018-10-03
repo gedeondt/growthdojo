@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Philosopher:400,700');
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+header {
+    height: 100%;
+    background-image: url(img/fondo1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.titular {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    line-height: 50px;
+}
+
+.titular:after {
+    width: 65px;
+    height: 4px;
+    content: "";
+    position: absolute;
+    background-color: #a51c18;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.titular span {
+    font-weight: 400;
+}
+
+.logo {
+    width: 500px;
+    margin: auto;
+    padding-top: 10%;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.bloque2 {
+    padding: 50px 0 70px 0;
+    text-align: center;
+    position: relative;
+}
+
+.bloque2:before {
+    content: "";
+    width: 336px;
+    height: 270px;
+    background-image: url(img/hojas1.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    left: -40px;
+    z-index: -1;
+}
+
+.bloque2:after {
+    content: "";
+    width: 284px;
+    height: 333px;
+    background-image: url(img/hojas2.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    z-index: -1;
+}
+
+.bloque3 {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.bloque3 div {
+    width: 50%;
+    padding: 6%;
+}
+
+.bloque2_gris {
+    background-color: #f4f4f4;
+}
+
+.bloque3 ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.bloque3 ul li {
+    position: relative;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.bloque3 ul li:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    left: -15px;
+    top: 5px;
+}
+
+.bloque2_1 {
+    background-image: url(img/bloque3_1.jpg);
+    background-size: cover;
+}
+
+.bloque2_2 {
+    background-image: url(img/bloque3_2.jpg);
+    background-size: cover;
+}
+
+.bloque4 {
+    text-align: center;
+}
+
+.bio {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    float: left;
+    padding: 30px;
+}
+
+.bio img,
+.bio2 img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.bio h3,
+.bio2 h3 {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.mountains {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.mountains img {
+    width: 100%;
+    height: auto;
+}
+
+.bio2 {
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+    float: left;
+    padding: 30px;
+    text-align: center;
+}
+
+.bloque5 {
+    padding: 50px 0 50px 0;
+    text-align: center;
+    background-image: url(img/fondo5.jpg);
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.formulario {
+    max-width: 650px;
+    margin: auto;
+}
+
+.caja {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #a51e19 1px;
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    outline: 0;
+}
+
+.formulario textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #a51e19 1px;
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    outline: 0;
+}
+
+.enviar {
+    width: 210px;
+    height: 50px;
+    color: #fff;
+    background-color: #a51e19;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-bottom: 270px;
+    outline: 0;
+}
+
+.logo_footer {
+    width: 300px;
+    margin: auto;
+    padding-top: 10%;
+    margin-bottom: 40px;
+}
+
+.logo_footer img {
+    width: 100%;
+    height: auto;
+}
+
+.clear_mobile {
+    display: none;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #000;
+}
+
+@media screen and (max-width:1620px) {
+    .bloque2:before {
+        left: -80px;
+    }
+    .bloque2:after {
+        right: -80px;
+    }
+}
+
+@media screen and (max-width:1580px) {
+    .bloque2:before {
+        left: -100px;
+        top: -50px;
+    }
+    .bloque2:after {
+        right: -120px;
+        top: 60px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .bloque2:before {
+        display: none;
+    }
+    .bloque2:after {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+.bio {
+    width: 50%;
+}
+
+.logo,
+.logo_footer {
+    width: 60%;
+}
+
+.titular {
+    font-size: 30px;
+}
+
+.clear_mobile {
+    clear: both;
+    display: block;
+}
+
+.bloque3 {
+    flex-flow: wrap;
+    flex-direction: column;
+}
+
+.formulario {
+    padding: 20px;
+}
+
+.bloque3 div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.orden3 {
+    order: 2;
+}
+
+.orden4 {
+    order: 1;
+}
+
+.bloque2_1,
+.bloque2_2 {
+    height: 300px;
+}
+
+
+}
+@media screen and (max-width:480px) {
+    
+    .bloque3 div {
+    padding: 6% 6% 6% 8%;
+}
+    
+    .bio,
+    .bio2 {
+        width: 100%;
+        float: none;
+    }
+}
